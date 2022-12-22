@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
 
     private GameObject Text;
     public  GameObject Fade;
-    public  Fade fadeScript;
+    
 
     GameObject _dayEnd;
 
@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0))
         {
-            fadeScript = GetComponent<Fade>();
+    
         }
     }
 
