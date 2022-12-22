@@ -3,17 +3,18 @@ using UnityEngine.UI; // ←※これを忘れずに入れる
 
 public class HpBarCtrl : MonoBehaviour
 {
-    [SerializeField,Header("プレイヤーのHP")]
+    [SerializeField, Header("Playerのhpの最大値")]
+    public float _MaxHp = 0;
+    [SerializeField,Header("プレイヤーのHP　Ｓｔａｒｔで最大値に合わせるので必要なし")]
     public float _hp = 0;
     private Slider _slider;
-    private int _empty = 0;
-    private float Nothing = 0;
+   
    
     public bool Istalking = false;
   
     void Start()
     {
-        Nothing = 20;
+        _hp = _MaxHp;
         // スライダーを取得する
         _slider = GameObject.Find("Slider").GetComponent<Slider>();
     }
@@ -40,10 +41,7 @@ public class HpBarCtrl : MonoBehaviour
         _slider.value = _hp;
     }
     public void TalkEvent(float value)
-    {
-            
+    {     
             _hp -= value;
-            
-
     }
 }
