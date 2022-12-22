@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerMoney : MonoBehaviour
+public class PlayerMoney2 : MonoBehaviour
 {
     [SerializeField, Header("現在の所持金を表示するテキストオブジェクト")]
     GameObject TextView;

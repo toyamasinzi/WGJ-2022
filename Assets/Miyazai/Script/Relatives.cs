@@ -49,7 +49,7 @@ public class Relatives : MonoBehaviour
             _hpBarCtrl.TalkEvent(_hpValue);
             _delayText.ConversationDelete();
             ConversationStart();
-
+            //PlayerMoney.GetSetHaveMoney();
             _isConversationTrue = false;
         }
     }
