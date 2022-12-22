@@ -7,11 +7,18 @@ public class DelayText : MonoBehaviour
 {
 
     [SerializeField,Tooltip("会話のテキストを入力")]
+    string _input;
     string _output;
     [SerializeField]
     Text _textUI;
     [SerializeField] 
     int _waitTimeChar;
+
+    private async void Start()
+    {
+        //Task.Run(() => OutputMessage(_input));
+        await OutputMessage(_input);
+    }
     //1文字ずつ表示する
     async Task OutputMessage(string s)
     {
