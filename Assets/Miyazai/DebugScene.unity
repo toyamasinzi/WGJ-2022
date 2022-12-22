@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &74841571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,6 +580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _conversationWindow: {fileID: 74841570}
   _delayText: {fileID: 2070346382}
+  _hpBarCtrl: {fileID: 0}
   _inputRelatives:
   - "\u3053\u3093\u306B\u3061\u306F"
   - "\u306B\u30FC\u3068\u3055\u3093\uFF57"
@@ -593,6 +594,9 @@ MonoBehaviour:
   - "\u3075\u3056\u3051\u3093\u306A\uFF01"
   - "\u3075\u3056\u3051\u3093\u306A\uFF01"
   - "\u3075\u3056\u3051\u3093\u306A\uFF01"
+  _relativesImage: {fileID: 0}
+  _hpValue: 0
+  _moneyValue: 0
 --- !u!114 &2070346382
 MonoBehaviour:
   m_ObjectHideFlags: 0
