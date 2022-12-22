@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class PlayerMoney : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    /**  
+    <summary>
+    プレイヤーが現在所持しているお金
+    </summary>
+    */
+    public static int _haveMoney = 0;
 
-    // Update is called once per frame
-    void Update()
+    /**  
+    <summary>
+    Get:プレイヤーが現在所持している総額
+    Set:プレイヤーのお金を引数分加算する
+    </summary>
+    */
+    public int GetSetHaveMoney
     {
-        
+        get { return _haveMoney; }
+
+        set { _haveMoney += value; }
     }
 }
