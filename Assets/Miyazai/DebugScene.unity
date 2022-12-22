@@ -258,7 +258,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &906377671
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -282,10 +282,10 @@ RectTransform:
   m_Father: {fileID: 954604899}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &954604898
 GameObject:
@@ -485,9 +485,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bf342f694e26dc4ea0ea83e63d34b13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _output: "\u3042\u3044\u3046\u3048\u304A"
+  _input:
+  - "\u3042\u3044\u3046\u3048\u304A"
+  - "\u304B\u304D\u304F\u3051\u3053"
+  - "\u304B\u304D\u304F\u3051\u3053"
+  - "\u304B\u304D\u304F\u3051\u3053"
+  - "\u304B\u304D\u304F\u3051\u3053"
   _textUI: {fileID: 906377670}
-  _waitTimeChar: 1000
+  _waitTimeChar: 100
+  _waitTimeLine: 1000
 --- !u!4 &2070346380
 Transform:
   m_ObjectHideFlags: 0
