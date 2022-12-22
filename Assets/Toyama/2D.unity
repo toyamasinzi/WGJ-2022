@@ -190,9 +190,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f453f694addf4275988fac205bc91968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BoundingShape2D: {fileID: 1401889658}
-  m_Damping: 0
-  m_MaxWindowSize: -1
 --- !u!114 &52940918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,32 +202,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ExcludedPropertiesInInspector:
-  - m_Script
-  m_LockStageInInspector: 
-  m_StreamingVersion: 20170927
-  m_Priority: 10
-  m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 1351498121}
-  m_Lens:
-    FieldOfView: 60
-    OrthographicSize: 7.6393905
-    NearClipPlane: 0.3
-    FarClipPlane: 1000
-    Dutch: 0
-    ModeOverride: 0
-    LensShift: {x: 0, y: 0}
-    GateFit: 2
-    m_SensorSize: {x: 1, y: 1}
-  m_Transitions:
-    m_BlendHint: 0
-    m_InheritPosition: 0
-    m_OnCameraLive:
-      m_PersistentCalls:
-        m_Calls: []
-  m_LegacyBlendHint: 0
-  m_ComponentOwner: {fileID: 1928101539}
 --- !u!4 &52940919
 Transform:
   m_ObjectHideFlags: 0
@@ -280,10 +251,10 @@ RectTransform:
   m_Father: {fileID: 1455629583}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -39.136536, y: -19.857208}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -17.9, y: -24.4}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &91103023
 MonoBehaviour:
@@ -463,7 +434,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _conversationWindow: {fileID: 1455629582}
   _delayText: {fileID: 285945983}
-  _hpBarCtrl: {fileID: 0}
   _inputRelatives:
   - "\u50CD\u3044\u3066\u306A\u3044\u3063\u3066\u30DE\u30B8\uFF1F\uFF1F"
   _inputPlayer:
@@ -679,7 +649,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _conversationWindow: {fileID: 1455629582}
   _delayText: {fileID: 378168516}
-  _hpBarCtrl: {fileID: 0}
   _inputRelatives:
   - "\u3046\u3061\u3067\u30D0\u30A4\u30C8\u304B\u3089\u3084\u3093\u306D\uFF1F"
   _inputPlayer:
@@ -998,28 +967,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShowDebugText: 0
-  m_ShowCameraFrustum: 1
-  m_IgnoreTimeScale: 0
-  m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
-  m_DefaultBlend:
-    m_Style: 1
-    m_Time: 2
-    m_CustomCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
-  m_CameraCutEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_CameraActivatedEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &735071451
 GameObject:
   m_ObjectHideFlags: 0
@@ -1190,7 +1137,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _conversationWindow: {fileID: 1455629582}
   _delayText: {fileID: 858577137}
-  _hpBarCtrl: {fileID: 0}
   _inputRelatives:
   - "\u304A\u3058\u3061\u3083\u3093\u306A\u3093\u3067\u306F\u305F\u3089\u3044\u3066\u306A\u3044\u306E\uFF1F"
   _inputPlayer:
@@ -1396,7 +1342,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _conversationWindow: {fileID: 1455629582}
   _delayText: {fileID: 1049077966}
-  _hpBarCtrl: {fileID: 0}
   _inputRelatives:
   - "\u4ED5\u4E8B\u3092\u3059\u308B\u306E\u306F\u3064\u3089\u304F\u306A\u3044\u308F\u3064\u3089\u304F\u306A\u308B\u59FF\u52E2\u304C\u3044\u3051\u306A\u3044\u306E\u3088"
   _inputPlayer:
@@ -1894,7 +1839,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1351498121
@@ -2070,7 +2015,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1455629583
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2087,10 +2032,10 @@ RectTransform:
   m_Father: {fileID: 735071455}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -38, y: -201}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0.03515625, y: 317}
+  m_SizeDelta: {x: -863.92, y: 101.2643}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1455629584
 MonoBehaviour:
@@ -2190,7 +2135,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _conversationWindow: {fileID: 1455629582}
   _delayText: {fileID: 1461616519}
-  _hpBarCtrl: {fileID: 0}
   _inputRelatives:
   - "\u304A\u3081\u3047\u305D\u308D\u305D\u308D\u50CD\u3051\u3084"
   _inputPlayer:
@@ -2422,7 +2366,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _conversationWindow: {fileID: 1455629582}
   _delayText: {fileID: 1496240578}
-  _hpBarCtrl: {fileID: 0}
   _inputRelatives:
   - "\u305D\u306E\u307E\u3093\u307E\u3058\u3083\u3044\u3064\u307E\u3067\u305F\u3063\u3066\u3082\u5909\u308F\u3093\u306A\u3044\u308F\u3088\u3049\uFF5E"
   _inputPlayer:
@@ -2953,16 +2896,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7155796051b734daa718462081dc5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 0, z: -10}
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
-  m_AngularDampingMode: 0
-  m_PitchDamping: 0
-  m_YawDamping: 0
-  m_RollDamping: 0
-  m_AngularDamping: 0
 --- !u!114 &1928101541
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -2975,21 +2908,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4044717213e31446939f7bd49c896ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
-  m_LookaheadTime: 0
-  m_LookaheadSmoothing: 0
-  m_LookaheadIgnoreY: 0
-  m_HorizontalDamping: 0.5
-  m_VerticalDamping: 0.5
-  m_ScreenX: 0.5
-  m_ScreenY: 0.5
-  m_DeadZoneWidth: 0
-  m_DeadZoneHeight: 0
-  m_SoftZoneWidth: 0.8
-  m_SoftZoneHeight: 0.8
-  m_BiasX: 0
-  m_BiasY: 0
-  m_CenterOnActivate: 1
 --- !u!114 &1928101542
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -3062,7 +2980,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _conversationWindow: {fileID: 1455629582}
   _delayText: {fileID: 2032664208}
-  _hpBarCtrl: {fileID: 0}
   _inputRelatives:
   - "\u307E\u3060\u82E5\u3044\u3093\u3060\u304B\u3089\u3053\u308C\u304B\u3089\u3060\u305E\uFF5E\uFF01\uFF01"
   _inputPlayer:
@@ -3210,7 +3127,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _conversationWindow: {fileID: 1455629582}
   _delayText: {fileID: 2042039387}
-  _hpBarCtrl: {fileID: 0}
   _inputRelatives:
   - "\u5168\u529B\u3067\u4ED5\u4E8B\u3084\u3063\u3066\u307F\u308B\u306E\u3082\u60AA\u304F\u306F\u306A\u3044\u305E"
   _inputPlayer:
@@ -3358,7 +3274,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _conversationWindow: {fileID: 1455629582}
   _delayText: {fileID: 2070839225}
-  _hpBarCtrl: {fileID: 0}
   _inputRelatives:
   - "\u9014\u4E2D\u3067\u3084\u3081\u305F\u3053\u3068\u3082\u7ACB\u6D3E\u306A\u884C\u52D5\u306E\u4E00\u3064\u3060\u3068\u601D\u3046\u308F"
   _inputPlayer:
@@ -3504,3 +3419,80 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 26.032497, y: 6.980672}
   m_EdgeRadius: 0
+--- !u!1001 &2139134321
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4597122988076864976, guid: 1a85eb93c337a1c42b66c0ee5b216602, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597122988076864977, guid: 1a85eb93c337a1c42b66c0ee5b216602, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597122988076864977, guid: 1a85eb93c337a1c42b66c0ee5b216602, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597122988076864977, guid: 1a85eb93c337a1c42b66c0ee5b216602, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597122988076864977, guid: 1a85eb93c337a1c42b66c0ee5b216602, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597122988076864977, guid: 1a85eb93c337a1c42b66c0ee5b216602, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597122988076864977, guid: 1a85eb93c337a1c42b66c0ee5b216602, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597122988076864977, guid: 1a85eb93c337a1c42b66c0ee5b216602, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597122988076864977, guid: 1a85eb93c337a1c42b66c0ee5b216602, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597122988076864977, guid: 1a85eb93c337a1c42b66c0ee5b216602, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597122988076864977, guid: 1a85eb93c337a1c42b66c0ee5b216602, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597122988076864977, guid: 1a85eb93c337a1c42b66c0ee5b216602, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597122988076864977, guid: 1a85eb93c337a1c42b66c0ee5b216602, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597122988076864977, guid: 1a85eb93c337a1c42b66c0ee5b216602, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597122988076864977, guid: 1a85eb93c337a1c42b66c0ee5b216602, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597122988076864977, guid: 1a85eb93c337a1c42b66c0ee5b216602, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597122988076864982, guid: 1a85eb93c337a1c42b66c0ee5b216602, type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1a85eb93c337a1c42b66c0ee5b216602, type: 3}
