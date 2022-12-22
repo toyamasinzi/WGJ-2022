@@ -18,7 +18,7 @@ public class Relatives : MonoBehaviour
 
     [SerializeField,Tooltip("eÊ‚Ì‰æ‘œ")] GameObject _relativesImage;
 
-    [SerializeField,Tooltip("‘‚â‚·‘Ì—Í")]float _hpValue;
+    [SerializeField,Tooltip("Œ¸‚ç‚·‘Ì—Í")]float _hpValue;
     [SerializeField, Tooltip("‘‚â‚·‚¨‹à")] int _moneyValue;
     bool _isConversationTrue = false;
     private void Awake()
@@ -49,7 +49,7 @@ public class Relatives : MonoBehaviour
             _hpBarCtrl.TalkEvent(_hpValue);
             _delayText.ConversationDelete();
             ConversationStart();
-            //PlayerMoney.GetSetHaveMoney();
+            PlayerMoney2._haveMoney = _moneyValue;
             _isConversationTrue = false;
         }
     }
