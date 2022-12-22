@@ -41,7 +41,7 @@ public class Relatives : MonoBehaviour
     //}
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player" || Input.GetKeyDown(KeyCode.F) && _isConversationTrue == false)
+        if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.F) && _isConversationTrue == false)
         {
             _isConversationTrue = true;
             _delayText.ConversationDelete();
