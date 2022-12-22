@@ -50,6 +50,7 @@ public class Relatives : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         _delayText.ConversationStart(_inputRelatives);
         Debug.Log("_inputRelatives");
+
         yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.F));
         _delayText.ConversationDelete();
         _delayText.ConversationStart(_inputPlayer);

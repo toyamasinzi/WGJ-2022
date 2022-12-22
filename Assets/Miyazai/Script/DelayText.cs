@@ -23,13 +23,15 @@ public class DelayText : MonoBehaviour
     //    }
     //}
 
-    public async void ConversationStart(List<string> input)
+    public async void ConversationStart(List<string> inputList)
     {
+        var input = inputList;
         foreach (var text in input)
         {
             await OutputMessage(text);
             await Task.Delay(_waitTimeLine);
         }
+        input.Clear();
     }
     //1•¶Žš‚¸‚Â•\Ž¦‚·‚é
     async Task OutputMessage(string s)

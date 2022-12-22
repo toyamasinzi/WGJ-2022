@@ -581,11 +581,11 @@ MonoBehaviour:
   _conversationWindow: {fileID: 74841570}
   _delayText: {fileID: 2070346382}
   _inputRelatives:
-  - "\u3042\u3042"
-  - "\uFF57\uFF57"
+  - "\u3053\u3093\u306B\u3061\u306F"
+  - "\u306B\u30FC\u3068\u3055\u3093\uFF57"
   _inputPlayer:
-  - "\u3044\u3044"
-  - "\u3042"
+  - "\u306F\uFF1F"
+  - "\u3075\u3056\u3051\u3093\u306A\uFF01"
 --- !u!114 &2070346382
 MonoBehaviour:
   m_ObjectHideFlags: 0
