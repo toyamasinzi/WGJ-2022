@@ -485,15 +485,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bf342f694e26dc4ea0ea83e63d34b13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _input:
-  - "\u3042\u3044\u3046\u3048\u304A"
-  - "\u304B\u304D\u304F\u3051\u3053"
-  - "\u304B\u304D\u304F\u3051\u3053"
-  - "\u304B\u304D\u304F\u3051\u3053"
-  - "\u304B\u304D\u304F\u3051\u3053"
+  _input: "\u4F1A\u8A71"
   _textUI: {fileID: 906377670}
   _waitTimeChar: 100
-  _waitTimeLine: 1000
 --- !u!4 &2070346380
 Transform:
   m_ObjectHideFlags: 0
