@@ -18,8 +18,6 @@ public class Relatives : MonoBehaviour
 
     [SerializeField,Tooltip("êeê ÇÃâÊëú")] GameObject _relativesImage;
 
-    [SerializeField,Tooltip("ëùÇ‚Ç∑ëÃóÕ")]float _hpValue;
-    [SerializeField, Tooltip("ëùÇ‚Ç∑Ç®ã‡")] int _moneyValue;
     bool _isConversationTrue = false;
     private void Awake()
     {
@@ -43,13 +41,11 @@ public class Relatives : MonoBehaviour
     //}
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player" || Input.GetKeyDown(KeyCode.F) && _isConversationTrue == false)
+        if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.F) && _isConversationTrue == false)
         {
             _isConversationTrue = true;
-            _hpBarCtrl.TalkEvent(_hpValue);
             _delayText.ConversationDelete();
             ConversationStart();
-            //PlayerMoney.GetSetHaveMoney();
             _isConversationTrue = false;
         }
     }

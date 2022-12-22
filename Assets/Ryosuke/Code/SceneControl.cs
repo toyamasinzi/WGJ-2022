@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneControl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public string _sceneName;
+
+    private void Start()
     {
-        
+        SceneManager.LoadScene(_sceneName);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
