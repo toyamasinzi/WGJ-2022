@@ -6,11 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class SceneControl : MonoBehaviour
 {
-    public string _sceneName;
+    [SerializeField,Header("シーン名"),Tooltip("シーンの名前")]
+    public string sceneName; 
 
-    private void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(_sceneName);
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneManager.LoadScene(sceneName);
+        }
     }
 
 }
