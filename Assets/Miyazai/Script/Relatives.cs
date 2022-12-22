@@ -8,7 +8,8 @@ public class Relatives : MonoBehaviour
     GameObject _conversationWindow;
     [SerializeField, Tooltip("DelayTextを入れる")]
     DelayText _delayText;
-
+    [SerializeField,Tooltip("HpBarCtrlを入れる")]
+    HpBarCtrl _hpBarCtrl;
     [SerializeField, Tooltip("親戚の会話のテキストを入力")]
     List<string> _inputRelatives;
 
@@ -40,7 +41,7 @@ public class Relatives : MonoBehaviour
     //}
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player" || Input.GetKeyDown(KeyCode.F) && _isConversationTrue == false)
+        if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.F) && _isConversationTrue == false)
         {
             _isConversationTrue = true;
             _delayText.ConversationDelete();
