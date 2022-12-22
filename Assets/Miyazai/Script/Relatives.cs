@@ -25,22 +25,24 @@ public class Relatives : MonoBehaviour
         StartCoroutine(DelayText());
     }
     //Test
-    private void Update()
+    //private void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.F)&& _isConversationTrue ==false)
+    //    {
+    //        _isConversationTrue = true;
+    //        _delayText.ConversationDelete();
+    //        ConversationStart();
+    //        _isConversationTrue = false;
+    //    }
+    //}
+    private void OnTriggerStay2D(Collider2D other)
     {
-        if (Input.GetKeyDown(KeyCode.F)&& _isConversationTrue ==false)
+        if (other.gameObject.tag == "Player" || Input.GetKeyDown(KeyCode.F) && _isConversationTrue == false)
         {
             _isConversationTrue = true;
             _delayText.ConversationDelete();
             ConversationStart();
             _isConversationTrue = false;
-        }
-    }
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Player" || Input.GetKeyDown(KeyCode.F))
-        {
-            _delayText.ConversationDelete();
-            ConversationStart();
         }
     }
     IEnumerator DelayText()
