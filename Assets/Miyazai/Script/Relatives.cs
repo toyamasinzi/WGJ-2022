@@ -15,10 +15,13 @@ public class Relatives : MonoBehaviour
     [SerializeField, Tooltip("プレイヤーの会話のテキストを入力")]
     List<string> _inputPlayer;
 
+    [SerializeField,Tooltip("親戚の画像")] GameObject _relativesImage;
+
     bool _isConversationTrue = false;
     private void Awake()
     {
         _conversationWindow.SetActive(false);
+        _relativesImage.SetActive(false);
     }
     void ConversationStart()
     {
@@ -48,8 +51,8 @@ public class Relatives : MonoBehaviour
     IEnumerator DelayText()
     {
         _conversationWindow.SetActive(true);
-
-        yield return new WaitForSeconds(0.5f);
+        _relativesImage.SetActive(true);
+        yield return new WaitForSeconds(1.0f);
         _delayText.ConversationStart(_inputRelatives);
         Debug.Log("_inputRelatives");
 
